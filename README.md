@@ -31,7 +31,7 @@ First, you'll need
 - A file named `whylogs_config/config.py`
 - A variable in `whylogs_config/config.py` named `schemas` of type `Dict[str, DatasetOptions]`
 - Optional: Anything that should be deployed along with the container should go
-    into `whylogs_config/config.py`
+    into `whylogs_config/`. This might be some text/json files that you need to parse/consume for your schema creation logic, or maybe a custom library you depend on for making whylogs UDFs for constraints.
 - A Dockerfile that copies your `whylogs_config` folder into the right spot (see
     the Dockerfile in this repo)
 
